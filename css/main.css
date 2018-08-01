@@ -1,0 +1,749 @@
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/* font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Sansita', sans-serif;
+*/
+
+
+@media screen and (min-width: 375px) {
+  body {
+    background: #eeeeee;
+    padding: 0 10px;
+  }
+
+body, html {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+a {
+  font-weight: 700;
+  color: #23a4cc;
+  text-decoration: none;
+}
+
+/* HEADER ================================ */
+.main-header {
+  width: 100%;
+  margin: auto 0;
+  padding: 0 3%;
+}
+
+
+.main-header .logo {
+  width:100%;
+}
+
+.main-header nav {
+width: 100%;
+}
+
+.top-img img {
+  width: 100%;
+}
+
+/* MAIN CONTENT ================================ */
+main {
+width: 96%;
+padding: 0 2%;
+margin: auto;
+clear: both;
+}
+
+.top-story h1 {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.top-story p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.sidebar .btn {
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #b21e49;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  width: 300px;
+  padding: 15px 0;
+}
+
+.sidebar .input {
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #ff1256;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  width: 300px;
+  padding: 15px 0;
+}
+
+.sidebar-newsletter {
+width: 100%;
+}
+
+.sidebar-newsletter h2 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.sidebar-newsletter form {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.sidebar-about-us, .sidebar-faq {
+  display: none;
+}
+
+.feed-item {
+  clear:both;
+  width: 100%;
+}
+
+.feed-img img {
+  width: 50%;
+  float: left;
+}
+
+.feed-info {
+  width: 50%;
+  float: right;
+}
+
+.feed h2 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.feed-item h3 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.feed-item p {
+  font-size: 10px;
+  font-weight: 700;
+}
+
+/* FOOTER ================================ */
+footer {
+width: 100%;
+margin: auto;
+}
+
+.footer-logo {
+  width: 47.5%;
+  margin: auto;
+}
+}
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media screen and (min-width: 768px) {
+  /* Tablet styles here! */
+  body {
+    background: #eeeeee;
+    padding: 0 10px;
+  }
+
+  body, html {
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+
+  a {
+    font-weight: 700;
+    color: #23a4cc;
+    text-decoration: none;
+  }
+  /* HEADER ================================ */
+  .main-header {
+    width: 100%;
+    margin: 0;
+    padding: 0 3%;
+  }
+
+  .main-header .header-wrapper {
+    width: 94%;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  .logo img {
+    width: 30%;
+    float: left;
+  }
+
+  nav ul li {
+    width: 60%;
+    float: left;
+  }
+
+  .main-header nav ul {
+  }
+
+  /* MAIN CONTENT ================================ */
+  main {
+  width: 96%;
+  padding: 0 2%;
+  margin: auto;
+  }
+
+.hero-area {
+  width: 100%;
+  clear: both;
+}
+
+  .top-story {
+    width: 70%;
+    clear: both;
+    float: left;
+  }
+
+  .top-story img {
+    float: left;
+    width: 100%;
+  }
+
+  .top-story h1 {
+    font-size: 21px;
+    font-weight: 700;
+  }
+
+  .top-story p {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .sidebar {
+  width: 30%;
+  float: right;
+  }
+
+  .sidebar .btn {
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #b21e49;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    width: 300px;
+    padding: 15px 0;
+  }
+
+  .sidebar .input {
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #ff1256;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    width: 300px;
+    padding: 15px 0;
+  }
+
+  .sidebar h2 {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+.sidebar p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+  .sidebar-about-us {
+    display: block;
+  }
+
+  .sidebar-faq {
+    display: block;
+  }
+
+  .sidebar-newsletter h2 {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .sidebar-newsletter form {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+.feed {
+width: 100%;
+float: left;
+clear: both;
+  }
+
+.feed img {
+width: 35%;
+float: left;
+  }
+
+.feed-info {
+width: 57%;
+float:left;
+}
+
+.feed h2 {
+font-size: 16px;
+font-weight: 700;
+  }
+
+.feed-item h3 {
+font-size: 16px;
+font-weight: 700;
+  }
+
+  .feed-item p {
+    font-size: 10px;
+    font-weight: 700;
+  }
+
+  /* FOOTER ================================ */
+  footer {
+  width: 100%;
+  clear:both;
+  margin: auto;
+  }
+
+  footer .footer-logo img {
+    width: 30%;
+    margin: auto;
+  }
+}
+
+
+
+@media screen and (min-width: 940px){
+  /* Computer styles here! */
+ body {
+   background: #eeeeee;
+   padding: 0 100px;
+ }
+
+  body, html {
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+
+  a {
+    font-weight: 700;
+    text-decoration: none;
+    color: #23a4cc;
+  }
+
+  /* HEADER ================================ */
+  .main-header {
+    width: 100%;
+    margin: auto 0;
+    padding: 0 3%;
+  }
+
+  .main-header .logo {
+    width:40%;
+    float: left;
+  }
+
+.logo img {
+  width: 100%;
+}
+
+  .main-header nav {
+  width: 40%;
+  float: left;
+  }
+
+.main-header nav ul li {
+  display: block;
+}
+
+  /* MAIN CONTENT ================================ */
+  main {
+  width: 100%;
+  padding: 0 2%;
+  margin: auto;
+  }
+
+  .hero-area {
+    width: 100%;
+    clear: both;
+  }
+
+.top-story {
+  float: left;
+  width: 70%;
+}
+
+  .top-story img {
+    width: 100%;
+    float: left;
+  }
+
+  .top-info {
+    width: 100%;
+  }
+
+
+  .top-story h1 {
+    font-size: 36px;
+    font-weight: 700;
+  }
+
+  .top-story p {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .sidebar {
+  width: 30%;
+  float: right;
+  display: block;
+  }
+
+  .sidebar-newsletter h2, .sidebar-about-us h2, .sidebar-faq h2 {
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  .sidebar-about-us p, .sidebar-faq p {
+    font-size: 16px;
+    font-weight: 300;
+  }
+
+  .sidebar-newsletter form {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .sidebar .btn {
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #b21e49;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    width: 300px;
+    padding: 15px 0;
+  }
+
+  .sidebar .input {
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #ff1256;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    width: 300px;
+    padding: 15px 0;
+  }
+
+  .feed img {
+    width: 30%;
+    float: left;
+  }
+
+.feed {
+width: 100%;
+float: left;
+border-top: 1px solid #cccccc;
+}
+
+.feed-item {
+  clear:both;
+  border-bottom: 1px solid #cccccc;
+}
+
+.feed a {
+  font-weight: 700;
+  color: #23a4cc;
+  text-decoration: none;
+}
+
+  .feed h2 {
+    font-size: 21px;
+    font-weight: 700;
+  }
+
+
+  .feed p {
+    font-size: 16px;
+    font-weight: 300;
+  }
+
+  /* FOOTER ================================ */
+  footer {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+
+  }
+
+  .footer-logo {
+    width: 100%;
+    margin: auto;
+  }
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
