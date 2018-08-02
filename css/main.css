@@ -507,7 +507,6 @@ font-weight: 700;
 @media screen and (min-width: 940px){
   /* Computer styles here! */
  body {
-   background: #eeeeee;
    padding: 0 200px;
  }
 
@@ -523,14 +522,17 @@ font-weight: 700;
 
   /* HEADER ================================ */
   .main-header {
+    height: 122px;
     width: 100%;
-    margin: auto 0;
+    margin: 0 auto;
     padding: 0 3%;
+    background-color: #dddddd;
   }
 
   .main-header .logo {
     width:40%;
     float: left;
+    margin: 0 auto;
   }
 
 .logo img {
@@ -540,17 +542,19 @@ font-weight: 700;
   .main-header nav {
   width: 40%;
   float: left;
+  margin: 0 auto;
   }
 
 .main-header nav ul li {
-  display: block;
+  display: inline;
 }
 
   /* MAIN CONTENT ================================ */
   main {
   width: 100%;
-  padding: 0 2%;
+  padding: 
   margin: auto;
+  background-color: #eeeeee;
   }
 
   .hero-area {
@@ -658,6 +662,7 @@ font-weight: 700;
   .feed img {
     width: 30%;
     float: left;
+    padding-bottom: 25px;
   }
 
 .feed {
@@ -667,6 +672,8 @@ float: left;
 
 .feed-item {
   clear:both;
+  float: left;
+  border-bottom: 1px solid #cccccc;
 }
 
 .feed a {
