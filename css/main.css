@@ -1,3 +1,4 @@
+
 /*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
 
 /*
@@ -507,7 +508,7 @@ font-weight: 700;
   /* Computer styles here! */
  body {
    background: #eeeeee;
-   padding: 0 340px;
+   padding: 0 200px;
  }
 
   body, html {
@@ -565,24 +566,27 @@ font-weight: 700;
   .top-story img {
     width: 100%;
     float: left;
+    margin: 0 auto;
+    border:2px solid #000000;
+    margin-bottom: 10px;
   }
 
   .top-info {
-    width: 100%;
+    width: 740px;
   }
 
 
-  .top-story h1 {
+  .top-info h1 {
     font-size: 36px;
     font-weight: 700;
     padding-left: 40px;
-    margin: auto 0;
+    margin: 0 auto;
+    line-height: 35px;
   }
 
   .top-story p {
     font-size: 16px;
     font-weight: 400;
-    width: 900px;
     padding-left: 40px;
   }
 
@@ -592,15 +596,25 @@ font-weight: 700;
   display: block;
   }
 
+
   .sidebar-newsletter h2, .sidebar-about-us h2, .sidebar-faq h2 {
     font-size: 30px;
     font-weight: 700;
+    margin: 0 auto;
   }
 
   .sidebar-newsletter, .sidebar-about-us {
     border-bottom: 1px solid #cccccc;
+}
 
-  }
+.sidebar-newsletter h2 {
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+
+.sidebar-about-us h2, .sidebar-faq h2 {
+  padding-top: 20px;
+}
 
   .sidebar-about-us p, .sidebar-faq p {
     font-size: 16px;
@@ -620,9 +634,10 @@ font-weight: 700;
     color: #ffffff;
     text-align: center;
     text-transform: uppercase;
-    width: 400px;
-    padding: 15px 0;
-    margin-bottom: 30px;
+    width: 325px;
+    padding: 17px 0;
+    margin-bottom: 20px;
+    border: none;
   }
 
   .sidebar .input {
@@ -632,10 +647,13 @@ font-weight: 700;
     color: #ffffff;
     text-align: center;
     text-transform: uppercase;
-    width: 400px;
-    padding: 15px 0;
-    margin-bottom: 30px;
+    width: 325px;
+    padding: 17px 10;
+    margin-bottom: 20px;
+    border: none;
   }
+
+
 
   .feed img {
     width: 30%;
@@ -645,17 +663,10 @@ font-weight: 700;
 .feed {
 width: 100%;
 float: left;
-border-top: 1px solid #cccccc;
 }
 
 .feed-item {
   clear:both;
-}
-
-.border {
-    border-bottom: 1px solid #cccccc;
-    clear: both;
-    padding-top: 30px;
 }
 
 .feed a {
@@ -683,7 +694,7 @@ border-top: 1px solid #cccccc;
     font-weight: 300;
     line-height: 25px;
     padding-left: 40px;
-    width: 900px;
+    width: 700px;
   }
 
   /* FOOTER ================================ */
