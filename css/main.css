@@ -118,7 +118,7 @@ a {
 /* HEADER ================================ */
 .main-header {
   width: 100%;
-  margin: auto 0;
+  margin: 0 auto;
   background-color: #ddd;
 }
 
@@ -162,6 +162,7 @@ clear: both;
 .top-story {
   width: 100%;
   border-bottom: 1px solid #ccc;
+  padding: 3%;
 }
 
 .figure {
@@ -173,7 +174,7 @@ clear: both;
 }
 
 .top-story h1 {
-  font-size: 21px;
+  font-size: 16px;
   font-weight: 700;
 }
 
@@ -182,7 +183,7 @@ clear: both;
   font-weight: 400;
 }
 
-.btn {
+.sidebar .btn {
   background-color: #b21e49;
   border: none;
   color: #fff;
@@ -196,6 +197,16 @@ clear: both;
   display: block;
 }
 
+.sidebar-newsletter input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.sidebar-newsletter input[type="text"] {
+  margin-bottom: 10px;
+  padding: 5px 0;
+}
+
 .sidebar .input {
   font-size: 18px;
   font-weight: 700;
@@ -203,7 +214,7 @@ clear: both;
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
-  width: 300px;
+  width: 100%;
   padding: 15px 0;
 }
 
@@ -228,36 +239,57 @@ padding: 0 10px 20px 10px;
 }
 
 /* Feed Section =========================== */
-
-.feed-item {
-  clear:both;
+.feed {
   width: 100%;
+  padding: 3%;
 }
 
-.feed-img img {
-  width: 50%;
-  float: left;
-}
-
-.feed-info {
-  width: 50%;
-  float: right;
+.feed p {
+  display: none;
 }
 
 .feed h2 {
   font-size: 16px;
+}
+
+.feed-item {
+  clear:both;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 15px;
+}
+
+.feed-img {
+  width: 45%;
+  float: left;
+  margin: 0;
+  padding-right: 3%;
+}
+
+.feed-info {
+  width: 45%;
+  float: right;
+  padding-left: 10px;
+}
+
+.feed-item h1 {
+  font-size: 16px;
   font-weight: 700;
 }
 
-.feed-item h3 {
+.feed-item h2 {
+  margin: 0;
+  font-size: 12px;
+}
+
+.feed-item h2 a {
+   color: #222;
+}
+
+.feed-type {
   font-size: 12px;
   font-weight: 700;
 }
 
-.feed-item p {
-  font-size: 10px;
-  font-weight: 700;
-}
 
 /* FOOTER ================================ */
 footer {
