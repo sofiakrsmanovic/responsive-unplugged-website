@@ -102,15 +102,11 @@ font-family: 'Open Sans', sans-serif;
 font-family: 'Sansita', sans-serif;
 */
 
-
-@media screen and (min-width: 375px) {
-  body {
-    background: #eeeeee;
-    padding: 0 10px;
-  }
-
 body, html {
   font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  color: #222;
+  background-color: #eee;
 }
 
 a {
@@ -123,20 +119,36 @@ a {
 .main-header {
   width: 100%;
   margin: auto 0;
-  padding: 0 3%;
+  background-color: #ddd;
 }
 
 
-.main-header .logo {
+.logo {
   width:100%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .main-header nav {
 width: 100%;
 }
 
-.top-img img {
-  width: 100%;
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+}
+
+nav ul li {
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  padding: 15px 0;
+}
+
+nav ul a {
+  text-transform: uppercase;
+  color: #333;
+  font-size: 18px;
 }
 
 /* MAIN CONTENT ================================ */
@@ -145,6 +157,19 @@ width: 96%;
 padding: 0 2%;
 margin: auto;
 clear: both;
+}
+
+.top-story {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+
+.figure {
+  margin: 0;
+}
+
+.top-story img {
+  width: 100%;
 }
 
 .top-story h1 {
@@ -157,15 +182,18 @@ clear: both;
   font-weight: 400;
 }
 
-.sidebar .btn {
-  font-size: 18px;
-  font-weight: 700;
+.btn {
   background-color: #b21e49;
-  color: #ffffff;
-  text-align: center;
+  border: none;
+  color: #fff;
+  font-weight: 700;
   text-transform: uppercase;
-  width: 300px;
-  padding: 15px 0;
+  line-height: 2.5;
+  text-align: center;
+  box-shadow: 2px 2px 0px #DADADA;
+  height: 40px;
+  width: 100%;
+  display: block;
 }
 
 .sidebar .input {
@@ -181,6 +209,8 @@ clear: both;
 
 .sidebar-newsletter {
 width: 100%;
+border-bottom: 1px solid #ccc;
+padding: 0 10px 20px 10px;
 }
 
 .sidebar-newsletter h2 {
@@ -196,6 +226,8 @@ width: 100%;
 .sidebar-about-us, .sidebar-faq {
   display: none;
 }
+
+/* Feed Section =========================== */
 
 .feed-item {
   clear:both;
@@ -218,7 +250,7 @@ width: 100%;
 }
 
 .feed-item h3 {
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 700;
 }
 
@@ -236,7 +268,6 @@ margin: auto;
 .footer-logo {
   width: 47.5%;
   margin: auto;
-}
 }
 
 
@@ -506,10 +537,6 @@ font-weight: 700;
 
 @media screen and (min-width: 940px){
   /* Computer styles here! */
- body {
-   padding: 0 200px;
- }
-
   body, html {
     font-family: 'Source Sans Pro', sans-serif;
   }
@@ -552,7 +579,7 @@ font-weight: 700;
   /* MAIN CONTENT ================================ */
   main {
   width: 100%;
-  padding: 
+  padding:
   margin: auto;
   background-color: #eeeeee;
   }
@@ -564,7 +591,7 @@ font-weight: 700;
 
 .top-story {
   float: left;
-  width: 70%;
+  width: 65%;
 }
 
   .top-story img {
@@ -575,10 +602,9 @@ font-weight: 700;
     margin-bottom: 10px;
   }
 
-  .top-info {
-    width: 740px;
-  }
-
+.top-info {
+  width: 65%;
+}
 
   .top-info h1 {
     font-size: 36px;
@@ -586,17 +612,19 @@ font-weight: 700;
     padding-left: 40px;
     margin: 0 auto;
     line-height: 35px;
+    width: 900px;
   }
 
   .top-story p {
     font-size: 16px;
     font-weight: 400;
     padding-left: 40px;
+    width: 900px;
   }
 
   .sidebar {
-  width: 30%;
-  float: right;
+  width: 35%;
+  float: left;
   display: block;
   }
 
@@ -701,7 +729,7 @@ float: left;
     font-weight: 300;
     line-height: 25px;
     padding-left: 40px;
-    width: 700px;
+    width: 100%;
   }
 
   /* FOOTER ================================ */
@@ -713,7 +741,8 @@ float: left;
   }
 
   .footer-logo {
-    width: 100%;
+    width: 50%;
+    padding-top: 40px;
     margin: auto;
   }
 }
