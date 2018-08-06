@@ -102,6 +102,8 @@ font-family: 'Open Sans', sans-serif;
 font-family: 'Sansita', sans-serif;
 */
 
+@media screen and (min-width: 375px) and (max-width: 767px) {
+
 body, html {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px;
@@ -306,7 +308,7 @@ footer {
     margin-right: auto;
     width: 47.5%;
 }
-
+}
 
 
 
@@ -415,8 +417,9 @@ footer {
   /* HEADER ================================ */
   .main-header {
     width: 100%;
-    margin: 0;
-    padding: 0 3%;
+    margin: 0 auto;
+    background-color: #ddd;
+    clear: both;
   }
 
   .main-header .header-wrapper {
@@ -425,45 +428,62 @@ footer {
     margin: 0 auto;
   }
 
-  .logo img {
-    width: 30%;
+  .logo {
+    width: 40%;
     float: left;
+    margin: 0 auto;
+  }
+
+nav {
+  width: 50%;
+  float: right;
+  margin: 0 auto;
+}
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: inline;
   }
 
   nav ul li {
-    width: 60%;
-    float: left;
+    float: right;
+    padding: 15px 0;
+    text-align: center;
   }
 
-  .main-header nav ul {
+  nav ul li a {
+    font-size: 1.125em;
+    text-transform: uppercase;
+    color: #333;
+    padding-left: 10px;
   }
-
   /* MAIN CONTENT ================================ */
-  main {
-  width: 96%;
-  padding: 0 2%;
-  margin: auto;
-  }
 
-.hero-area {
+.top-story {
   width: 100%;
   clear: both;
+  float: left;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 25px;
 }
-
-  .top-story {
-    width: 70%;
-    clear: both;
-    float: left;
-  }
 
   .top-story img {
     float: left;
-    width: 100%;
+    width: 57%;
+    margin-right: 3%;
+    border:2px solid #000000;
+  }
+
+  .top-info {
+    float: left;
+    width: 40%;
   }
 
   .top-story h1 {
     font-size: 21px;
     font-weight: 700;
+    margin: 0 auto;
   }
 
   .top-story p {
@@ -472,8 +492,9 @@ footer {
   }
 
   .sidebar {
-  width: 30%;
+  width: 37%;
   float: right;
+  clear: both;
   }
 
   .sidebar .btn {
@@ -508,11 +529,7 @@ footer {
   font-weight: 400;
 }
 
-  .sidebar-about-us {
-    display: block;
-  }
-
-  .sidebar-faq {
+  .sidebar-about-us, .sidebar-faq {
     display: block;
   }
 
@@ -527,9 +544,8 @@ footer {
   }
 
 .feed {
-width: 100%;
+width: 60%;
 float: left;
-clear: both;
   }
 
 .feed img {
@@ -616,8 +632,7 @@ font-weight: 700;
   /* MAIN CONTENT ================================ */
   main {
   width: 100%;
-  padding:
-  margin: auto;
+  margin: 0 auto;
   background-color: #eeeeee;
   }
 
