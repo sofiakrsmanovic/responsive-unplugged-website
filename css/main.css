@@ -413,10 +413,15 @@ footer {
     color: #23a4cc;
     text-decoration: none;
   }
+
+  main {
+   margin: 0;
+   clear: both;
+  }
   /* HEADER ================================ */
   .main-header {
     width: 100%;
-    margin: 0 auto;
+    margin: 0;
     background-color: #ddd;
     clear: both;
     float: left;
@@ -425,24 +430,25 @@ footer {
   .main-header .header-wrapper {
     width: 94%;
     max-width: 960px;
-    margin: 0 auto;
+    margin: 0;
   }
 
   .logo {
     width: 40%;
     float: left;
-    margin: 0 auto;
+    margin: 0;
+    padding-left: 12px;
   }
 
   .logo img {
-    margin: 0 auto;
+    margin: 0;
     width: 90%;
   }
 
 nav {
   width: 50%;
   float: right;
-  margin: 0 auto;
+  margin: 0;
 }
 
   nav ul {
@@ -464,14 +470,13 @@ nav {
     padding-left: 10px;
   }
   /* MAIN CONTENT ================================ */
-
 .hero-area {
-  margin: 0 auto;
+  margin: 0;
 }
 
 .top-story {
   width: 100%;
-  margin: 0 auto;
+  margin: 0;
   clear: both;
   float: left;
   border-bottom: 1px solid #ccc;
@@ -505,17 +510,21 @@ nav {
   width: 37%;
   float: right;
   clear: both;
+  padding-right: 2%;
   }
 
   .sidebar .btn {
-    font-size: 18px;
-    font-weight: 700;
     background-color: #b21e49;
-    color: #ffffff;
-    text-align: center;
+    border: none;
+    color: #fff;
+    font-weight: 700;
     text-transform: uppercase;
-    width: 300px;
-    padding: 15px 0;
+    line-height: 2.5;
+    text-align: center;
+    box-shadow: 2px 2px 0px #DADADA;
+    height: 40px;
+    width: 100%;
+    display: block;
   }
 
   .sidebar .input {
@@ -525,8 +534,14 @@ nav {
     color: #ffffff;
     text-align: center;
     text-transform: uppercase;
-    width: 300px;
+    width: 100%;
     padding: 15px 0;
+  }
+
+  .sidebar-newsletter input[type="text"] {
+    margin-bottom: 10px;
+    padding: 5px 0;
+    width: 100%;
   }
 
   .sidebar h2 {
@@ -556,7 +571,7 @@ nav {
   }
 
 .feed {
-width: 55%;
+width: 53%;
 float: left;
 padding-left: 20px;
 border-right: 1px solid #ccc;
@@ -566,6 +581,7 @@ padding-right: 25px;
   .feed-item {
     clear: both;
     float: left;
+    width: 100%;
     border-bottom: 1px solid #ccc;
     padding-bottom: 15px;
   }
@@ -588,10 +604,16 @@ float:left;
 }
 
 .feed h2 {
-font-size: 21px;
+font-size: 18px;
 font-weight: 700;
-margin: 0 auto;
-padding-top: 20px;
+margin: 0;
+padding-top: 15px;
+}
+
+.feed-item h2 {
+  font-weight: 700;
+  margin: 0;
+  font-size: 18px
 }
 
 .feed-item h3 {
