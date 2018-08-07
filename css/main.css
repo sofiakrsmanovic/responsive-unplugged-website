@@ -147,17 +147,17 @@ nav ul li {
 }
 
 nav ul a {
-  text-transform: uppercase;
-  color: #333;
-  font-size: 1.125em;
+ text-transform: uppercase;
+ color: #333;
+ font-size: 1.125em;
 }
 
 /* MAIN CONTENT ================================ */
 main {
-width: 96%;
-padding: 0 2%;
-margin: auto;
-clear: both;
+ width: 96%;
+ padding: 0 2%;
+ margin: auto;
+ clear: both;
 }
 
 .top-story {
@@ -216,9 +216,9 @@ clear: both;
 }
 
 .sidebar-newsletter {
-width: 100%;
-border-bottom: 1px solid #ccc;
-padding: 0 10px 20px 10px;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  padding: 0 10px 20px 10px;
 }
 
 .sidebar-newsletter h2 {
@@ -263,7 +263,14 @@ padding: 0 10px 20px 10px;
   float: left;
 }
 
-.feed-item img {
+.bottom-item {
+  clear:both;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 15px;
+  float: left;
+}
+
+.feed-item img, .bottom-item img {
  width: 45%;
  float: left;
  margin: 0;
@@ -275,16 +282,16 @@ padding: 0 10px 20px 10px;
   float: left;
 }
 
-.feed-item h2 {
+.feed-item h2, .bottom-item h2 {
   margin: 0;
   font-size: 1em;
 }
 
-.feed-item h2 a {
+.feed-item h2 a, .bottom-item h2 a {
    color: #222;
 }
 
-.feed-item h3 {
+.feed-item h3, .bottom-item h3 {
   font-size: 0.75em;
 }
 
@@ -418,7 +425,7 @@ clear: both;
   /* HEADER ================================ */
 .main-header {
 width: 100%;
-margin: 0;
+margin: auto;
 background-color: #ddd;
 clear: both;
 float: left;
@@ -433,12 +440,12 @@ margin: 0;
 .logo {
 width: 40%;
 float: left;
-margin: 0;
-padding-left: 12px;
+margin: 0 auto;
 }
 
 .logo img {
 margin: 0;
+float: left;
 width: 90%;
 }
 
@@ -446,6 +453,7 @@ nav {
 width: 50%;
 float: right;
 margin: 0;
+text-align: center;
 }
 
 nav ul {
@@ -458,10 +466,11 @@ nav ul li {
 float: right;
 padding: 15px 0;
 text-align: center;
+margin-right: 50px;
 }
 
 nav ul li a {
-font-size: 16px;
+font-size: 1em;
 text-transform: uppercase;
 color: #333;
 padding-left: 10px;
@@ -494,39 +503,39 @@ width: 40%;
 }
 
 .top-story h1 {
-font-size: 21px;
+font-size: 1.3125em;
 font-weight: 700;
 margin: 0 auto;
 }
 
 .top-story p {
-font-size: 14px;
+font-size: 0.875em;
 font-weight: 400;
 }
 
-  .sidebar {
-  width: 37%;
-  float: right;
-  clear: both;
-  padding-right: 2%;
+.sidebar {
+width: 37%;
+float: right;
+clear: both;
+padding-right: 2%;
   }
 
-  .sidebar .btn {
-    background-color: #b21e49;
-    border: none;
-    color: #fff;
-    font-weight: 700;
-    text-transform: uppercase;
-    line-height: 2.5;
-    text-align: center;
-    box-shadow: 2px 2px 0px #DADADA;
-    height: 40px;
-    width: 100%;
-    display: block;
+.sidebar .btn {
+background-color: #b21e49;
+border: none;
+color: #fff;
+font-weight: 700;
+text-transform: uppercase;
+line-height: 2.5;
+text-align: center;
+box-shadow: 2px 2px 0px #DADADA;
+height: 40px;
+width: 100%;
+display: block;
   }
 
   .sidebar .input {
-    font-size: 18px;
+    font-size: 1.125em;
     font-weight: 700;
     background-color: #ff1256;
     color: #ffffff;
@@ -543,12 +552,12 @@ font-weight: 400;
   }
 
   .sidebar h2 {
-    font-size: 21px;
+    font-size: 1.125em;
     font-weight: 700;
   }
 
 .sidebar p {
-  font-size: 14px;
+  font-size: 0.875em;
   font-weight: 400;
 }
 
@@ -564,7 +573,7 @@ font-weight: 400;
   }
 
   .sidebar-newsletter form {
-    font-size: 18px;
+    font-size: 1.125em;
     font-weight: 700;
   }
 
@@ -585,28 +594,20 @@ margin-bottom: 100px;
     padding-bottom: 15px;
   }
 
-  .feed-item-1 {
-    float: left;
-  }
-
-  .feed-item-1 img {
-  width: 40%;
+.bottom-item {
+  clear: both;
   float: left;
-  margin: 0 auto;
-  padding-right: 3%;
-    }
-
-  .feed-item-1 p {
-  display: none;
-      }
+  width: 100%;
+  padding-bottom: 15px;
+}
 
 
   .feed-type {
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 0.75em;
   }
 
-.feed-item img {
+.feed-item img, .bottom-item img {
 width: 40%;
 float: left;
 margin: 0 auto;
@@ -619,26 +620,26 @@ float:left;
 }
 
 .feed h2 {
-font-size: 18px;
+font-size: 1.125em;
 font-weight: 700;
 margin: 0;
 padding-top: 15px;
 }
 
 
-.feed-item h2 {
+.feed-item h2, .bottom-item h2 {
   font-weight: 700;
   margin: 0;
-  font-size: 18px
+  font-size: 1.125em;
 }
 
-.feed-item h3 {
-font-size: 16px;
+.feed-item h3, .bottom-item h3 {
+font-size: 1em;
 font-weight: 700;
   }
 
-  .feed-item p {
-    font-size: 10px;
+  .feed-item p, .bottom-item p {
+    font-size: 0.625em;
     font-weight: 700;
     display: none;
   }
