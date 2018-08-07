@@ -124,7 +124,6 @@ a {
   background-color: #ddd;
 }
 
-
 .logo {
   width:100%;
   margin: 0 auto;
@@ -166,7 +165,6 @@ clear: both;
   border-bottom: 1px solid #ccc;
   padding: 3%;
 }
-
 
 .top-story img {
   width: 100%;
@@ -290,8 +288,6 @@ padding: 0 10px 20px 10px;
   font-size: 0.75em;
 }
 
-
-
 /* FOOTER ================================ */
 footer {
  width: 100%;
@@ -401,110 +397,112 @@ footer {
 @media screen and (min-width: 768px) {
   /* Tablet styles here! */
 
-  body, html {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 16px;
-    color: #222;
-    background-color: #eee;
-  }
-
-  a {
-    font-weight: 700;
-    color: #23a4cc;
-    text-decoration: none;
-  }
-
-  main {
-   margin: 0;
-   clear: both;
-  }
-  /* HEADER ================================ */
-  .main-header {
-    width: 100%;
-    margin: 0;
-    background-color: #ddd;
-    clear: both;
-    float: left;
-  }
-
-  .main-header .header-wrapper {
-    width: 94%;
-    max-width: 960px;
-    margin: 0;
-  }
-
-  .logo {
-    width: 40%;
-    float: left;
-    margin: 0;
-    padding-left: 12px;
-  }
-
-  .logo img {
-    margin: 0;
-    width: 90%;
-  }
-
-nav {
-  width: 50%;
-  float: right;
-  margin: 0;
+body, html {
+font-family: 'Source Sans Pro', sans-serif;
+font-size: 16px;
+color: #222;
+background-color: #eee;
 }
 
-  nav ul {
-    list-style: none;
-    padding: 0;
-    display: inline;
-  }
+a {
+font-weight: 700;
+color: #23a4cc;
+text-decoration: none;
+}
 
-  nav ul li {
-    float: right;
-    padding: 15px 0;
-    text-align: center;
-  }
+main {
+margin: 0;
+clear: both;
+}
 
-  nav ul li a {
-    font-size: 16px;
-    text-transform: uppercase;
-    color: #333;
-    padding-left: 10px;
-  }
+  /* HEADER ================================ */
+.main-header {
+width: 100%;
+margin: 0;
+background-color: #ddd;
+clear: both;
+float: left;
+}
+
+.main-header .header-wrapper {
+width: 94%;
+max-width: 960px;
+margin: 0;
+}
+
+.logo {
+width: 40%;
+float: left;
+margin: 0;
+padding-left: 12px;
+}
+
+.logo img {
+margin: 0;
+width: 90%;
+}
+
+nav {
+width: 50%;
+float: right;
+margin: 0;
+}
+
+nav ul {
+list-style: none;
+padding: 0;
+display: inline;
+}
+
+nav ul li {
+float: right;
+padding: 15px 0;
+text-align: center;
+}
+
+nav ul li a {
+font-size: 16px;
+text-transform: uppercase;
+color: #333;
+padding-left: 10px;
+}
+
   /* MAIN CONTENT ================================ */
 .hero-area {
-  margin: 0;
+margin: 0;
 }
 
 .top-story {
-  width: 100%;
-  margin: 0;
-  clear: both;
-  float: left;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 25px;
+width: 100%;
+margin: 0;
+clear: both;
+float: left;
+border-bottom: 1px solid #ccc;
+padding-bottom: 25px;
 }
 
-  .top-story img {
-    float: left;
-    width: 57%;
-    border: 2px solid #000000;
-    margin-right: 3%;
-  }
+.top-story img {
+float: left;
+width: 57%;
+border: 2px solid #000000;
+margin-right: 3%;
+}
 
-  .top-info {
-    float: left;
-    width: 40%;
-  }
+.top-info {
+float: left;
+width: 40%;
+}
 
-  .top-story h1 {
-    font-size: 21px;
-    font-weight: 700;
-    margin: 0 auto;
-  }
+.top-story h1 {
+font-size: 21px;
+font-weight: 700;
+margin: 0 auto;
+}
 
-  .top-story p {
-    font-size: 14px;
-    font-weight: 400;
-  }
+.top-story p {
+font-size: 14px;
+font-weight: 400;
+}
 
   .sidebar {
   width: 37%;
@@ -576,15 +574,32 @@ float: left;
 padding-left: 20px;
 border-right: 1px solid #ccc;
 padding-right: 25px;
+margin-bottom: 100px;
   }
 
-  .feed-item {
+.feed-item {
     clear: both;
     float: left;
     width: 100%;
     border-bottom: 1px solid #ccc;
     padding-bottom: 15px;
   }
+
+  .feed-item-1 {
+    float: left;
+  }
+
+  .feed-item-1 img {
+  width: 40%;
+  float: left;
+  margin: 0 auto;
+  padding-right: 3%;
+    }
+
+  .feed-item-1 p {
+  display: none;
+      }
+
 
   .feed-type {
     text-transform: uppercase;
@@ -610,6 +625,7 @@ margin: 0;
 padding-top: 15px;
 }
 
+
 .feed-item h2 {
   font-weight: 700;
   margin: 0;
@@ -629,13 +645,16 @@ font-weight: 700;
 
   /* FOOTER ================================ */
   footer {
+  border-top: 1px solid #ccc;
   width: 100%;
   clear:both;
   margin: auto;
+  text-align: center;
   }
 
   footer img {
-    width: 40%;
+    padding-top: 20px;
+    width: 30%;
     margin: auto;
   }
 }
