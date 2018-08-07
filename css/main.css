@@ -400,13 +400,12 @@ footer {
 
 @media screen and (min-width: 768px) {
   /* Tablet styles here! */
-  body {
-    background: #eeeeee;
-    padding: 0 10px;
-  }
 
   body, html {
     font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    color: #222;
+    background-color: #eee;
   }
 
   a {
@@ -420,6 +419,7 @@ footer {
     margin: 0 auto;
     background-color: #ddd;
     clear: both;
+    float: left;
   }
 
   .main-header .header-wrapper {
@@ -432,6 +432,11 @@ footer {
     width: 40%;
     float: left;
     margin: 0 auto;
+  }
+
+  .logo img {
+    margin: 0 auto;
+    width: 90%;
   }
 
 nav {
@@ -453,15 +458,20 @@ nav {
   }
 
   nav ul li a {
-    font-size: 1.125em;
+    font-size: 16px;
     text-transform: uppercase;
     color: #333;
     padding-left: 10px;
   }
   /* MAIN CONTENT ================================ */
 
+.hero-area {
+  margin: 0 auto;
+}
+
 .top-story {
   width: 100%;
+  margin: 0 auto;
   clear: both;
   float: left;
   border-bottom: 1px solid #ccc;
@@ -471,8 +481,8 @@ nav {
   .top-story img {
     float: left;
     width: 57%;
+    border: 2px solid #000000;
     margin-right: 3%;
-    border:2px solid #000000;
   }
 
   .top-info {
@@ -520,7 +530,7 @@ nav {
   }
 
   .sidebar h2 {
-    font-size: 16px;
+    font-size: 21px;
     font-weight: 700;
   }
 
@@ -531,11 +541,13 @@ nav {
 
   .sidebar-about-us, .sidebar-faq {
     display: block;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
   }
 
-  .sidebar-newsletter h2 {
-    font-size: 16px;
-    font-weight: 700;
+  .sidebar-newsletter {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
   }
 
   .sidebar-newsletter form {
@@ -544,24 +556,43 @@ nav {
   }
 
 .feed {
-width: 60%;
+width: 55%;
 float: left;
+padding-left: 20px;
+border-right: 1px solid #ccc;
+padding-right: 25px;
   }
 
-.feed img {
-width: 35%;
+  .feed-item {
+    clear: both;
+    float: left;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+  }
+
+  .feed-type {
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+
+.feed-item img {
+width: 40%;
 float: left;
+margin: 0 auto;
+padding-right: 3%;
   }
 
 .feed-info {
-width: 57%;
+width: 50%;
 float:left;
 }
 
 .feed h2 {
-font-size: 16px;
+font-size: 21px;
 font-weight: 700;
-  }
+margin: 0 auto;
+padding-top: 20px;
+}
 
 .feed-item h3 {
 font-size: 16px;
@@ -571,6 +602,7 @@ font-weight: 700;
   .feed-item p {
     font-size: 10px;
     font-weight: 700;
+    display: none;
   }
 
   /* FOOTER ================================ */
@@ -580,8 +612,8 @@ font-weight: 700;
   margin: auto;
   }
 
-  footer .footer-logo img {
-    width: 30%;
+  footer img {
+    width: 40%;
     margin: auto;
   }
 }
