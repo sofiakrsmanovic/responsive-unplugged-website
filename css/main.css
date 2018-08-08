@@ -401,7 +401,7 @@ footer {
    Modify as content requires.
    ========================================================================== */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 939px) {
   /* Tablet styles here! */
 
 body, html {
@@ -418,8 +418,10 @@ text-decoration: none;
 }
 
 main {
-margin: 0;
-clear: both;
+ width: 96%;
+ padding: 0 2%;
+ margin: auto;
+ clear: both;
 }
 
   /* HEADER ================================ */
@@ -511,6 +513,7 @@ margin: 0 auto;
 .top-story p {
 font-size: 0.875em;
 font-weight: 400;
+line-height: 23px;
 }
 
 .sidebar {
@@ -559,6 +562,7 @@ display: block;
 .sidebar p {
   font-size: 0.875em;
   font-weight: 400;
+  line-height: 23px;
 }
 
   .sidebar-about-us, .sidebar-faq {
@@ -666,6 +670,8 @@ font-weight: 700;
   /* Computer styles here! */
   body, html {
     font-family: 'Source Sans Pro', sans-serif;
+    color: #222222;
+    background-color: #eee;
   }
 
   a {
@@ -674,23 +680,30 @@ font-weight: 700;
     color: #23a4cc;
   }
 
+  main {
+   width: 90%;
+   padding: 0 2%;
+   margin: auto;
+  }
   /* HEADER ================================ */
   .main-header {
-    height: 122px;
     width: 100%;
-    margin: 0 auto;
+    margin: 0;
     padding: 0 3%;
     background-color: #dddddd;
+    float: left;
   }
 
   .main-header .logo {
     width:40%;
     float: left;
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
   }
 
 .logo img {
   width: 100%;
+  margin: 0 auto;
 }
 
   .main-header nav {
@@ -704,131 +717,151 @@ font-weight: 700;
 }
 
   /* MAIN CONTENT ================================ */
-  main {
-  width: 100%;
-  margin: 0 auto;
-  background-color: #eeeeee;
-  }
 
   .hero-area {
     width: 100%;
     clear: both;
+    margin: 0;
+    border-bottom: 1px solid #cccccc;
+    float: left;
+    padding-bottom: 25px;
+    padding-top: 30px;
   }
 
 .top-story {
   float: left;
   width: 65%;
+  margin: 0;
+  border-right: 1px solid #cccccc;
+  padding-right: 20px;
 }
 
   .top-story img {
     width: 100%;
-    float: left;
-    margin: 0 auto;
+    margin: 0;
     border:2px solid #000000;
     margin-bottom: 10px;
   }
 
 .top-info {
-  width: 65%;
+  width: 95%;
+  float: left;
+  margin-left: 0;
+  padding-left: 40px;
 }
 
   .top-info h1 {
     font-size: 36px;
     font-weight: 700;
-    padding-left: 40px;
     margin: 0 auto;
     line-height: 35px;
-    width: 900px;
+    clear: both;
   }
 
   .top-story p {
     font-size: 16px;
     font-weight: 400;
-    padding-left: 40px;
-    width: 900px;
   }
 
   .sidebar {
-  width: 35%;
-  float: left;
-  display: block;
-  }
-
-
-  .sidebar-newsletter h2, .sidebar-about-us h2, .sidebar-faq h2 {
-    font-size: 30px;
-    font-weight: 700;
-    margin: 0 auto;
-  }
-
-  .sidebar-newsletter, .sidebar-about-us {
-    border-bottom: 1px solid #cccccc;
-}
-
-.sidebar-newsletter h2 {
-  padding-bottom: 20px;
-  padding-top: 10px;
-}
-
-.sidebar-about-us h2, .sidebar-faq h2 {
-  padding-top: 20px;
-}
-
-  .sidebar-about-us p, .sidebar-faq p {
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 25px;
-  }
-
-  .sidebar-newsletter form {
-    font-size: 18px;
-    font-weight: 700;
-  }
+  width: 30%;
+  float: right;
+  padding-left: 3.5%;
+    }
 
   .sidebar .btn {
-    font-size: 18px;
-    font-weight: 700;
-    background-color: #b21e49;
-    color: #ffffff;
-    text-align: center;
-    text-transform: uppercase;
-    width: 325px;
-    padding: 17px 0;
-    margin-bottom: 20px;
-    border: none;
+  background-color: #b21e49;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 2.5;
+  text-align: center;
+  box-shadow: 2px 2px 0px #DADADA;
+  height: 55px;
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+    }
+
+    .sidebar .input {
+      font-size: 1.125em;
+      font-weight: 700;
+      background-color: #ff1256;
+      color: #ffffff;
+      text-align: center;
+      text-transform: uppercase;
+      width: 100%;
+      padding: 15px 0;
+        margin-bottom: 20px;
+    }
+
+    .sidebar-newsletter input[type="text"] {
+      margin-bottom: 10px;
+      padding: 5px 0;
+      width: 100%;
+    }
+
+    .sidebar h2 {
+      font-size: 30px;
+      font-weight: 700;
+    }
+
+.sidebar-newsletter h2 {
+  margin: 0;
+  padding-bottom: 30px;
+}
+
+  .sidebar p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
   }
 
-  .sidebar .input {
-    font-size: 18px;
-    font-weight: 700;
-    background-color: #ff1256;
-    color: #ffffff;
-    text-align: center;
-    text-transform: uppercase;
-    width: 325px;
-    padding: 17px 10;
-    margin-bottom: 20px;
-    border: none;
-  }
+    .sidebar-about-us {
+      display: block;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 20px;
+    }
 
+    .sidebar-newsletter {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 20px;
+    }
 
-
-  .feed img {
-    width: 30%;
-    float: left;
-    padding-bottom: 25px;
-  }
+    .sidebar-newsletter form {
+      font-size: 1.125em;
+      font-weight: 700;
+    }
 
 .feed {
 width: 100%;
 float: left;
+clear: both;
+margin-top: 30px;
+padding-left: 40px;
 }
 
 .feed-item {
   clear:both;
+  width: 96%;
   float: left;
   border-bottom: 1px solid #cccccc;
+  padding-bottom: 15px;
 }
+
+.bottom-item {
+  clear:both;
+  float: left;
+  padding-bottom: 15px;
+}
+
+.feed img {
+    width: 20%;
+    float: left;
+    padding: 0 30px 25px 0;
+  }
+
 
 .feed a {
   font-weight: 700;
@@ -840,21 +873,24 @@ float: left;
   .feed h2 {
     font-size: 21px;
     font-weight: 700;
-    padding-left: 40px;
+    margin: 0 auto;
   }
 
 
-.feed h3 {
+.feed-item h3, .bottom-item h3 {
   font-size: 12px;
   font-weight: 700;
-  padding-left: 40px;
+  padding-top: 20px;
+  text-transform: uppercase;
 }
 
   .feed p {
     font-size: 16px;
     font-weight: 300;
+    display: block;
     line-height: 25px;
     padding-left: 40px;
+    margin-top: 0;
     width: 100%;
   }
 
@@ -863,11 +899,13 @@ float: left;
   width: 100%;
   margin: auto;
   text-align: center;
+  clear: both;
+  border-top: 1px solid #cccccc;
 
   }
 
-  .footer-logo {
-    width: 50%;
+  footer img {
+    width: 20%;
     padding-top: 40px;
     margin: auto;
   }
