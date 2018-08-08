@@ -671,6 +671,7 @@ font-weight: 700;
   body, html {
     font-family: 'Source Sans Pro', sans-serif;
     color: #222222;
+    font-size: 16px;
     background-color: #eee;
   }
 
@@ -751,7 +752,7 @@ font-weight: 700;
 }
 
   .top-info h1 {
-    font-size: 36px;
+    font-size: 2.25em;
     font-weight: 700;
     margin: 0 auto;
     line-height: 35px;
@@ -759,7 +760,7 @@ font-weight: 700;
   }
 
   .top-story p {
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 400;
   }
 
@@ -803,7 +804,7 @@ font-weight: 700;
     }
 
     .sidebar h2 {
-      font-size: 30px;
+      font-size: 1.875em;
       font-weight: 700;
     }
 
@@ -813,7 +814,7 @@ font-weight: 700;
 }
 
   .sidebar p {
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 400;
     line-height: 23px;
   }
@@ -871,21 +872,21 @@ padding-left: 40px;
 }
 
   .feed h2 {
-    font-size: 21px;
+    font-size: 1.3125em;
     font-weight: 700;
     margin: 0 auto;
   }
 
 
 .feed-item h3, .bottom-item h3 {
-  font-size: 12px;
+  font-size: 0.75em;
   font-weight: 700;
   padding-top: 20px;
   text-transform: uppercase;
 }
 
   .feed p {
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 300;
     display: block;
     line-height: 25px;
