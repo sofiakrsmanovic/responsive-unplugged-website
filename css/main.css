@@ -102,26 +102,77 @@ font-family: 'Open Sans', sans-serif;
 font-family: 'Sansita', sans-serif;
 */
 
-@media screen and (min-width: 375px) and (max-width: 767px) {
-
 body, html {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 16px;
-  color: #222;
-  background-color: #eee;
+ font-family: 'Source Sans Pro', sans-serif;
+ font-size: 16px;
+ color: #222;
+ background-color: #eee;
 }
 
 a {
-  font-weight: 700;
-  color: #23a4cc;
-  text-decoration: none;
+ font-weight: 700;
+ color: #23a4cc;
+ text-decoration: none;
+}
+
+p {
+ font-size: 1em;
+ line-height: 1.4;
+}
+
+img {
+ width: 100%;
+ height: auto;
+}
+
+h1, h2, h3, h4 {
+ font-weight: 700;
+}
+
+h1 {
+ font-size:1.4em;
+ line-height: 1.6;
+}
+
+h2 {
+ font-size: 1em;
+}
+
+figure {
+ margin: 0;
+}
+
+.btn {
+ background-color: #b21e49;
+ border: none;
+ color: #fff;
+ font-weight: 700;
+ text-transform: uppercase;
+ line-height: 2.5;
+ text-align: center;
+ box-shadow: 2px 2px 0px #DADADA;
+ height: 2.5em;
+ width: 100%;
+ display: block;
+}
+
+input.btn {
+ background-color: #ff1256;
+}
+
+.bottom-item {
+   border-bottom: none !important;
 }
 
 /* HEADER ================================ */
 .main-header {
   width: 100%;
-  margin: 0 auto;
+  margin: auto;
   background-color: #ddd;
+}
+
+.figure {
+  margin: 0;
 }
 
 .logo {
@@ -132,6 +183,10 @@ a {
 
 .main-header nav {
 width: 100%;
+}
+
+nav {
+  width: 100%;
 }
 
 nav ul {
@@ -163,36 +218,17 @@ main {
 .top-story {
   width: 100%;
   border-bottom: 1px solid #ccc;
-  padding: 3%;
 }
 
 .top-story img {
   width: 100%;
+  margin: 0;
 }
 
-.top-story h1 {
-  font-size: 1em;
-  font-weight: 700;
-}
-
-.top-story p {
-  font-size: 0.875em;
-  font-weight: 400;
-}
-
-.sidebar .btn {
-  background-color: #b21e49;
-  border: none;
-  color: #fff;
-  font-weight: 700;
-  text-transform: uppercase;
-  line-height: 2.5;
-  text-align: center;
-  box-shadow: 2px 2px 0px #DADADA;
-  height: 40px;
+.sidebar {
   width: 100%;
-  display: block;
 }
+
 
 .sidebar-newsletter input {
   width: 100%;
@@ -216,19 +252,8 @@ main {
 }
 
 .sidebar-newsletter {
-  width: 100%;
   border-bottom: 1px solid #ccc;
   padding: 0 10px 20px 10px;
-}
-
-.sidebar-newsletter h2 {
-  font-size: 1em;
-  font-weight: 700;
-}
-
-.sidebar-newsletter form {
-  font-size: 1.125em;
-  font-weight: 700;
 }
 
 .sidebar-about-us, .sidebar-faq {
@@ -238,7 +263,12 @@ main {
 /* Feed Section =========================== */
 .feed {
   width: 100%;
-  padding: 3%;
+}
+
+.feed-item {
+  clear:both;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 15px;
 }
 
 .feed p {
@@ -256,13 +286,6 @@ main {
   font-size: 0.625em;
 }
 
-.feed-item {
-  clear:both;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 15px;
-  float: left;
-}
-
 .bottom-item {
   clear:both;
   border-bottom: 1px solid #ccc;
@@ -270,17 +293,13 @@ main {
   float: left;
 }
 
-.feed-item img, .bottom-item img {
+.feed-img {
  width: 45%;
  float: left;
  margin: 0;
  padding-right: 3%;
 }
 
-.feed-info {
-  width: 45%;
-  float: left;
-}
 
 .feed-item h2, .bottom-item h2 {
   margin: 0;
@@ -297,6 +316,7 @@ main {
 
 /* FOOTER ================================ */
 footer {
+  border-top: 1px solid #ccc;
  width: 100%;
  margin: auto 0;
  padding-top: 20px;
@@ -305,7 +325,6 @@ footer {
 }
 
 .footer-img {
-   border-top: 1px solid #ccc;
   display: block;
     margin-left: auto;
     margin-right: auto;
@@ -401,7 +420,7 @@ footer {
    Modify as content requires.
    ========================================================================== */
 
-@media screen and (min-width: 768px) and (max-width: 939px) {
+@media screen and (min-width: 768px) and (max-width: 960px) {
   /* Tablet styles here! */
 
 body, html {
@@ -429,8 +448,7 @@ main {
 width: 100%;
 margin: auto;
 background-color: #ddd;
-clear: both;
-float: left;
+padding: 0 3%;
 }
 
 .main-header .header-wrapper {
@@ -666,7 +684,7 @@ font-weight: 700;
 
 
 
-@media screen and (min-width: 940px){
+@media screen and (min-width: 961px){
   /* Computer styles here! */
   body, html {
     font-family: 'Source Sans Pro', sans-serif;
@@ -765,7 +783,7 @@ font-weight: 700;
   }
 
   .sidebar {
-  width: 30%;
+  width: 29%;
   float: right;
   padding-left: 3.5%;
     }
@@ -855,6 +873,7 @@ padding-left: 40px;
   clear:both;
   float: left;
   padding-bottom: 15px;
+  width: 96%;
 }
 
 .feed img {
