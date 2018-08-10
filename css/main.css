@@ -684,53 +684,110 @@ font-weight: 700;
 @media screen and (min-width: 960px) {
   /* Computer styles here! */
   body, html {
-    font-family: 'Source Sans Pro', sans-serif;
-    color: #222222;
-    font-size: 16px;
-    background-color: #eee;
+   font-family: 'Source Sans Pro', sans-serif;
+   font-size: 16px;
+   color: #222;
+   background-color: #eee;
   }
 
   a {
-    font-weight: 700;
-    text-decoration: none;
-    color: #23a4cc;
+   font-weight: 700;
+   color: #23a4cc;
+   text-decoration: none;
   }
 
-  main {
-   width: 90%;
-   padding: 0 2%;
-   margin: auto;
+  p {
+   font-size: 1em;
+   line-height: 1.4;
   }
+
+  img {
+   width: 100%;
+   height: auto;
+  }
+
+  h1, h2, h3, h4 {
+   font-weight: 700;
+  }
+
+  h1 {
+   font-size:1.4em;
+   line-height: 1.6;
+  }
+
+  h2 {
+   font-size: 1em;
+  }
+
+  figure {
+   margin: 0;
+  }
+
+  .btn {
+   background-color: #b21e49;
+   border: none;
+   color: #fff;
+   font-weight: 700;
+   text-transform: uppercase;
+   line-height: 2.5;
+   text-align: center;
+   box-shadow: 2px 2px 0px #DADADA;
+   height: 2.5em;
+   width: 100%;
+   display: block;
+  }
+
+  input.btn {
+   background-color: #ff1256;
+  }
+
+  .bottom-item {
+     border-bottom: none !important;
+  }
+
   /* HEADER ================================ */
   .main-header {
     width: 100%;
-    margin: 0;
-    padding: 0 3%;
-    background-color: #dddddd;
-    float: left;
+    margin: auto;
+    background-color: #ddd;
   }
 
-  .main-header .logo {
-    width:40%;
-    float: left;
+  .figure {
     margin: 0;
-    padding: 0;
   }
 
-.logo img {
-  width: 100%;
-  margin: 0 auto;
-}
+  .logo {
+    width:100%;
+    margin: 0 auto;
+    text-align: center;
+  }
 
-  .main-header nav {
-  width: 40%;
+
+  nav {
+  width: 60%;
   float: left;
-  margin: 0 auto;
+  margin: 0;
+  text-align: center;
   }
 
-.main-header nav ul li {
+  nav ul {
+  list-style: none;
+  padding: 40px 0;
+  text-align: center
+  }
+
+  nav ul li {
   display: inline;
-}
+  padding: 0 2%;
+  border: none;
+  position: relative;
+  }
+
+  nav ul li a {
+  font-size: 1em;
+  text-transform: uppercase;
+  color: #333;
+  }
 
   /* MAIN CONTENT ================================ */
 
@@ -746,170 +803,77 @@ font-weight: 700;
 
 .top-story {
   float: left;
-  width: 65%;
+  width: 60%;
   margin: 0;
-  border-right: 1px solid #cccccc;
-  padding-right: 20px;
+  padding-right: 2%;
 }
 
   .top-story img {
     width: 100%;
     margin: 0;
     border:2px solid #000000;
-    margin-bottom: 10px;
+    margin-bottom: 16px;
   }
 
 .top-info {
-  width: 95%;
-  float: left;
-  margin-left: 0;
-  padding-left: 40px;
+  width: 100%;
+  float: none;
 }
 
-  .top-info h1 {
-    font-size: 2.25em;
-    font-weight: 700;
-    margin: 0 auto;
-    line-height: 35px;
-    clear: both;
-  }
-
-  .top-story p {
-    font-size: 1em;
-    font-weight: 400;
-  }
+  /* SIDEBAR ================================ */
 
   .sidebar {
-  width: 29%;
+  width: 30%;
   float: right;
-  padding-left: 3.5%;
+  clear: none;
+  border-left: 1px solid #ccc;
     }
 
-  .sidebar .btn {
-  background-color: #b21e49;
-  border: none;
-  color: #fff;
-  font-weight: 700;
-  text-transform: uppercase;
-  line-height: 2.5;
-  text-align: center;
-  box-shadow: 2px 2px 0px #DADADA;
-  height: 55px;
-  width: 100%;
-  display: block;
-  margin-bottom: 20px;
-    }
-
-    .sidebar .input {
-      font-size: 1.125em;
-      font-weight: 700;
-      background-color: #ff1256;
-      color: #ffffff;
-      text-align: center;
-      text-transform: uppercase;
-      width: 100%;
-      padding: 15px 0;
-        margin-bottom: 20px;
-    }
-
-    .sidebar-newsletter input[type="text"] {
-      margin-bottom: 10px;
-      padding: 5px 0;
-      width: 100%;
-    }
-
-    .sidebar h2 {
-      font-size: 1.875em;
-      font-weight: 700;
-    }
-
-.sidebar-newsletter h2 {
-  margin: 0;
-  padding-bottom: 30px;
-}
-
-  .sidebar p {
-    font-size: 1em;
-    font-weight: 400;
-    line-height: 23px;
+.sidebar-about-us, .sidebar-faq, .sidebar-newsletter {
+  padding: 0 20px 20px 20px;
   }
 
-    .sidebar-about-us {
-      display: block;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 20px;
-    }
+.sidebar-about-us, .sidebar-newsletter {
+border-bottom: 1px solid #ccc;
+}
 
-    .sidebar-newsletter {
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 20px;
-    }
+.sidebar-newsletter input {
+  width: 100%;
+  box-sizing: border-box;
+  }
 
-    .sidebar-newsletter form {
-      font-size: 1.125em;
-      font-weight: 700;
-    }
+.sidebar-newsletter input[type="text"] {
+  margin-bottom: 10px;
+  padding: 5px 0;
+      }
+
+  /* FEED ================================ */
 
 .feed {
 width: 100%;
-float: left;
+float: none;
 clear: both;
-margin-top: 30px;
-padding-left: 40px;
+padding-top: 20px;
+border-top: 1px solid #ccc;
+border-right: none;
 }
 
 .feed-item {
-  clear:both;
-  width: 96%;
-  float: left;
-  border-bottom: 1px solid #cccccc;
-  padding-bottom: 15px;
+    border-bottom: 1px solid #ccc;
 }
 
-.bottom-item {
-  clear:both;
-  float: left;
-  padding-bottom: 15px;
-  width: 96%;
+.feed p {
+  display: block;
+  margin-top: 0;
 }
 
-.feed img {
-    width: 20%;
-    float: left;
-    padding: 0 30px 25px 0;
-  }
-
-
-.feed a {
-  font-weight: 700;
-  color: #23a4cc;
-  text-decoration: none;
-  margin: 0 auto;
+.feed h2 {
+  margin: 0;
 }
 
-  .feed h2 {
-    font-size: 1.3125em;
-    font-weight: 700;
-    margin: 0 auto;
-  }
-
-
-.feed-item h3, .bottom-item h3 {
-  font-size: 0.75em;
-  font-weight: 700;
-  padding-top: 20px;
-  text-transform: uppercase;
+.feed-img {
+  width: 20%;
 }
-
-  .feed p {
-    font-size: 1em;
-    font-weight: 300;
-    display: block;
-    line-height: 25px;
-    padding-left: 40px;
-    margin-top: 0;
-    width: 100%;
-  }
 
   /* FOOTER ================================ */
   footer {
