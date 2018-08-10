@@ -101,7 +101,8 @@ textarea {
 font-family: 'Open Sans', sans-serif;
 font-family: 'Sansita', sans-serif;
 */
-
+@media only screen and (min-width:280px) and (max-width: 767px) {
+  /* Mobile styles here! */
 body, html {
  font-family: 'Source Sans Pro', sans-serif;
  font-size: 16px;
@@ -326,12 +327,11 @@ footer {
 
 .footer-img {
   display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 47.5%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 47.5%;
 }
 }
-
 
 
 /* ==========================================================================
@@ -420,28 +420,87 @@ footer {
    Modify as content requires.
    ========================================================================== */
 
-@media screen and (min-width: 768px) and (max-width: 960px) {
+@media only screen and (min-width:768px) and (max-width: 959px) {
   /* Tablet styles here! */
 
-body, html {
-font-family: 'Source Sans Pro', sans-serif;
-font-size: 16px;
-color: #222;
-background-color: #eee;
-}
+  body, html {
+   font-family: 'Source Sans Pro', sans-serif;
+   font-size: 16px;
+   color: #222;
+   background-color: #eee;
+  }
 
-a {
-font-weight: 700;
-color: #23a4cc;
-text-decoration: none;
-}
+  a {
+   font-weight: 700;
+   color: #23a4cc;
+   text-decoration: none;
+  }
 
-main {
- width: 96%;
- padding: 0 2%;
- margin: auto;
- clear: both;
-}
+  p {
+   font-size: 1em;
+   line-height: 1.4;
+  }
+
+  img {
+   width: 100%;
+   height: auto;
+  }
+
+  h1, h2, h3, h4 {
+   font-weight: 700;
+  }
+
+  h1 {
+   font-size:1.4em;
+   line-height: 1.6;
+  }
+
+  h2 {
+   font-size: 1em;
+  }
+
+  figure {
+   margin: 0;
+  }
+
+  .btn {
+   background-color: #b21e49;
+   border: none;
+   color: #fff;
+   font-weight: 700;
+   text-transform: uppercase;
+   line-height: 2.5;
+   text-align: center;
+   box-shadow: 2px 2px 0px #DADADA;
+   height: 2.5em;
+   width: 100%;
+   display: block;
+  }
+
+  input.btn {
+   background-color: #ff1256;
+  }
+
+  .bottom-item {
+     border-bottom: none !important;
+  }
+
+  /* HEADER ================================ */
+  .main-header {
+    width: 100%;
+    margin: auto;
+    background-color: #ddd;
+  }
+
+  .figure {
+    margin: 0;
+  }
+
+  .logo {
+    width:100%;
+    margin: 0 auto;
+    text-align: center;
+  }
 
   /* HEADER ================================ */
 .main-header {
@@ -463,58 +522,46 @@ float: left;
 margin: 0 auto;
 }
 
-.logo img {
-margin: 0;
-float: left;
-width: 90%;
-}
-
 nav {
-width: 50%;
-float: right;
+width: 60%;
+float: left;
 margin: 0;
 text-align: center;
 }
 
 nav ul {
 list-style: none;
-padding: 0;
-display: inline;
+padding: 40px 0;
+text-align: center
 }
 
 nav ul li {
-float: right;
-padding: 15px 0;
-text-align: center;
-margin-right: 50px;
+display: inline;
+padding: 0 2%;
+border: none;
+position: relative;
 }
 
 nav ul li a {
 font-size: 1em;
 text-transform: uppercase;
 color: #333;
-padding-left: 10px;
 }
 
   /* MAIN CONTENT ================================ */
-.hero-area {
-margin: 0;
-}
 
 .top-story {
 width: 100%;
-margin: 0;
-clear: both;
-float: left;
+padding-top: 40px;
 border-bottom: 1px solid #ccc;
-padding-bottom: 25px;
+padding-bottom: 40px;
 }
 
-.top-story img {
+.top-img {
 float: left;
 width: 57%;
 border: 2px solid #000000;
-margin-right: 3%;
+padding-right: 3%;
 }
 
 .top-info {
@@ -522,17 +569,14 @@ float: left;
 width: 40%;
 }
 
-.top-story h1 {
-font-size: 1.3125em;
-font-weight: 700;
-margin: 0 auto;
-}
 
 .top-story p {
 font-size: 0.875em;
 font-weight: 400;
 line-height: 23px;
 }
+
+  /* SIDEBAR ================================ */
 
 .sidebar {
 width: 37%;
@@ -541,79 +585,43 @@ clear: both;
 padding-right: 2%;
   }
 
-.sidebar .btn {
-background-color: #b21e49;
-border: none;
-color: #fff;
-font-weight: 700;
-text-transform: uppercase;
-line-height: 2.5;
-text-align: center;
-box-shadow: 2px 2px 0px #DADADA;
-height: 40px;
-width: 100%;
-display: block;
+
+.sidebar-about-us, .sidebar-faq {
+  display: block;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
   }
 
-  .sidebar .input {
-    font-size: 1.125em;
-    font-weight: 700;
-    background-color: #ff1256;
-    color: #ffffff;
-    text-align: center;
-    text-transform: uppercase;
-    width: 100%;
-    padding: 15px 0;
+.sidebar-newsletter {
+  display: block;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
   }
 
-  .sidebar-newsletter input[type="text"] {
-    margin-bottom: 10px;
-    padding: 5px 0;
-    width: 100%;
+.sidebar-newsletter input {
+  width: 100%;
+  box-sizing: border-box;
   }
 
-  .sidebar h2 {
-    font-size: 1.125em;
-    font-weight: 700;
+.sidebar-newsletter input[type="text"] {
+  margin-bottom: 10px;
+  padding: 5px 0;
   }
 
-.sidebar p {
-  font-size: 0.875em;
-  font-weight: 400;
-  line-height: 23px;
-}
-
-  .sidebar-about-us, .sidebar-faq {
-    display: block;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 20px;
-  }
-
-  .sidebar-newsletter {
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 20px;
-  }
-
-  .sidebar-newsletter form {
-    font-size: 1.125em;
-    font-weight: 700;
-  }
+  /* FEED ================================ */
 
 .feed {
-width: 53%;
+width: 60%;
 float: left;
-padding-left: 20px;
 border-right: 1px solid #ccc;
-padding-right: 25px;
-margin-bottom: 100px;
   }
 
 .feed-item {
-    clear: both;
-    float: left;
-    width: 100%;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 15px;
+  clear: both;
+  float: left;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 15px;
   }
 
 .bottom-item {
@@ -623,10 +631,9 @@ margin-bottom: 100px;
   padding-bottom: 15px;
 }
 
-
-  .feed-type {
-    text-transform: uppercase;
-    font-size: 0.75em;
+.feed-type {
+  text-transform: uppercase;
+  font-size: 0.75em;
   }
 
 .feed-item img, .bottom-item img {
@@ -637,8 +644,7 @@ padding-right: 3%;
   }
 
 .feed-info {
-width: 50%;
-float:left;
+width: 57%;
 }
 
 .feed h2 {
@@ -648,21 +654,12 @@ margin: 0;
 padding-top: 15px;
 }
 
-
-.feed-item h2, .bottom-item h2 {
-  font-weight: 700;
-  margin: 0;
-  font-size: 1.125em;
-}
-
 .feed-item h3, .bottom-item h3 {
 font-size: 1em;
 font-weight: 700;
   }
 
   .feed-item p, .bottom-item p {
-    font-size: 0.625em;
-    font-weight: 700;
     display: none;
   }
 
@@ -684,7 +681,7 @@ font-weight: 700;
 
 
 
-@media screen and (min-width: 961px){
+@media screen and (min-width: 960px) {
   /* Computer styles here! */
   body, html {
     font-family: 'Source Sans Pro', sans-serif;
