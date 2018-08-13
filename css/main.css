@@ -123,7 +123,6 @@ p {
 
 img {
  width: 100%;
- height: auto;
 }
 
 h1, h2, h3, h4 {
@@ -221,9 +220,9 @@ main {
   border-bottom: 1px solid #ccc;
 }
 
-.top-story img {
+.top-img img {
   width: 100%;
-  margin: 0;
+  padding-top: 2%;
 }
 
 .sidebar {
@@ -443,7 +442,6 @@ footer {
 
   img {
    width: 100%;
-   height: auto;
   }
 
   h1, h2, h3, h4 {
@@ -481,7 +479,7 @@ footer {
    background-color: #ff1256;
   }
 
-  .bottom-item {
+  .last-item {
      border-bottom: none !important;
   }
 
@@ -496,42 +494,43 @@ footer {
     margin: 0;
   }
 
-  .logo {
-    width:100%;
-    margin: 0 auto;
-    text-align: center;
-  }
-
   /* HEADER ================================ */
 .main-header {
 width: 100%;
 margin: auto;
 background-color: #ddd;
-padding: 0 3%;
+padding: 0 2%;
 }
 
 .main-header .header-wrapper {
 width: 94%;
 max-width: 960px;
 margin: 0;
+clear: both;
 }
 
 .logo {
-width: 40%;
-float: left;
-margin: 0 auto;
-}
-
-nav {
-width: 60%;
+width: 50%;
 float: left;
 margin: 0;
+}
+
+.logo img {
+max-width: 303px;
+margin: 0;
+}
+
+
+nav {
+width: 50%;
+float: left;
+margin: 0 auto;
 text-align: center;
 }
 
 nav ul {
 list-style: none;
-padding: 40px 0;
+padding: 20px 0;
 text-align: center
 }
 
@@ -558,10 +557,15 @@ padding-bottom: 40px;
 }
 
 .top-img {
-float: left;
-width: 57%;
-border: 2px solid #000000;
-padding-right: 3%;
+	width: 100%;
+    margin: 0;
+    padding-left: 2%;
+ }
+
+.top-img img{
+	width: 54%;
+	float: left;
+  padding-right: 2%;
 }
 
 .top-info {
@@ -611,47 +615,36 @@ padding-right: 2%;
   /* FEED ================================ */
 
 .feed {
-width: 60%;
+width: 58%;
 float: left;
 border-right: 1px solid #ccc;
+padding-left: 2%;
   }
 
 .feed-item {
   clear: both;
-  float: left;
   width: 100%;
   border-bottom: 1px solid #ccc;
   padding-bottom: 15px;
   }
-
-.bottom-item {
-  clear: both;
-  float: left;
-  width: 100%;
-  padding-bottom: 15px;
-}
 
 .feed-type {
   text-transform: uppercase;
   font-size: 0.75em;
   }
 
-.feed-item img, .bottom-item img {
-width: 40%;
-float: left;
-margin: 0 auto;
-padding-right: 3%;
+  .feed-img {
+   width: 45%;
+   float: left;
+   margin: 0;
+   padding-right: 3%;
   }
 
-.feed-info {
-width: 57%;
-}
 
 .feed h2 {
 font-size: 1.125em;
 font-weight: 700;
-margin: 0;
-padding-top: 15px;
+padding-top: 0 15px;
 }
 
 .feed-item h3, .bottom-item h3 {
@@ -672,9 +665,9 @@ font-weight: 700;
   text-align: center;
   }
 
-  footer img {
+  .footer-img {
     padding-top: 20px;
-    width: 30%;
+    width: 50%;
     margin: auto;
   }
 }
@@ -703,7 +696,6 @@ font-weight: 700;
 
   img {
    width: 100%;
-   height: auto;
   }
 
   h1, h2, h3, h4 {
@@ -799,6 +791,15 @@ font-weight: 700;
     float: left;
     padding-bottom: 25px;
     padding-top: 30px;
+  }
+
+  .top-img {
+  	width: 100%;
+      padding-bottom: 1em;
+  }
+
+  .top-img img {
+  	max-width: 620px;
   }
 
 .top-story {
