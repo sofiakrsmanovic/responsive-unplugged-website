@@ -703,12 +703,18 @@ font-weight: 700;
   }
 
   h1 {
-   font-size:1.4em;
+   font-size:2.25em;
    line-height: 1.6;
+   margin: 0 auto;
   }
 
   h2 {
-   font-size: 1em;
+   font-size: 1.875em;
+  }
+
+  .feed h3 {
+    font-size: 0.75em;
+    text-transform: uppercase;
   }
 
   figure {
@@ -749,22 +755,27 @@ font-weight: 700;
   }
 
   .logo {
-    width:100%;
+    width:50%;
     margin: 0 auto;
-    text-align: center;
+    float: left;
+    padding-left: 3%;
   }
 
+.logo img {
+  max-width: 350px;
+  margin: 0;
+}
 
   nav {
-  width: 60%;
-  float: left;
+  width: 40%;
   margin: 0;
   text-align: center;
+  float: left;
   }
 
   nav ul {
   list-style: none;
-  padding: 40px 0;
+  padding: 20px 0;
   text-align: center
   }
 
@@ -789,53 +800,54 @@ font-weight: 700;
     margin: 0;
     border-bottom: 1px solid #cccccc;
     float: left;
-    padding-bottom: 25px;
     padding-top: 30px;
   }
 
   .top-img {
   	width: 100%;
-      padding-bottom: 1em;
   }
 
-  .top-img img {
-  	max-width: 620px;
-  }
 
 .top-story {
   float: left;
-  width: 60%;
+  width: 63%;
   margin: 0;
-  padding-right: 2%;
+  padding-left: 3%;
+  padding-right: 3%;
 }
 
   .top-story img {
     width: 100%;
     margin: 0;
     border:2px solid #000000;
-    margin-bottom: 16px;
   }
 
 .top-info {
   width: 100%;
   float: none;
+  margin: 0 auto;
 }
 
   /* SIDEBAR ================================ */
 
   .sidebar {
-  width: 30%;
-  float: right;
+  width: 28%;
+  float: left;
   clear: none;
   border-left: 1px solid #ccc;
-    }
+}
 
 .sidebar-about-us, .sidebar-faq, .sidebar-newsletter {
-  padding: 0 20px 20px 20px;
+  padding: 0 0 20px 20px;
+
   }
 
 .sidebar-about-us, .sidebar-newsletter {
 border-bottom: 1px solid #ccc;
+}
+
+.sidebar-newsletter {
+  margin-top: 0 auto;
 }
 
 .sidebar-newsletter input {
@@ -848,6 +860,10 @@ border-bottom: 1px solid #ccc;
   padding: 5px 0;
       }
 
+.sidebar-faq {
+  margin-bottom: 160px;
+}
+
   /* FEED ================================ */
 
 .feed {
@@ -855,25 +871,39 @@ width: 100%;
 float: none;
 clear: both;
 padding-top: 20px;
-border-top: 1px solid #ccc;
-border-right: none;
+margin-left: 3%;
 }
+
 
 .feed-item {
     border-bottom: 1px solid #ccc;
+    clear: both;
+    width: 97%;
+    padding-bottom: 20px;
 }
 
-.feed p {
-  display: block;
+.bottom-item {
+  clear: both;
+  width: 97%;
+  padding-bottom: 20px;
+}
+
+.feed-item p, .bottom-item p {
   margin-top: 0;
+  width: 96%;
+  margin-right: 0;
+  width: 98%;
 }
 
-.feed h2 {
+.bottom-item h2, .feed-item h2 {
   margin: 0;
+  font-size: 21px;
 }
 
 .feed-img {
   width: 20%;
+  float:left;
+  padding-right: 2%;
 }
 
   /* FOOTER ================================ */
