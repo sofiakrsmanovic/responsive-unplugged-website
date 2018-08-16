@@ -102,15 +102,13 @@ font-family: 'Sansita', sans-serif;
 */
 
 /*Mobile Styles*/
-
+@media only screen and (min-width:280px) and (max-width: 767px) {
 /*Header*/
-body {
-    background: #eeeeee;
-    padding: 0 10px;
-  }
-
 body, html {
-  font-family: 'Source Sans Pro', sans-serif;
+ font-family: 'Source Sans Pro', sans-serif;
+ font-size: 16px;
+ color: #222;
+ background-color: #eee;
 }
 
 a {
@@ -119,29 +117,68 @@ a {
   text-decoration: none;
 }
 
-.main-header {
-  width: 100%;
-  margin: auto 0;
+h1 {
+  font-size: 21px;
+  font-weight: 700;
 }
 
-.main-header .logo {
+h2 {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+figure {
+ margin: 0;
+}
+
+.strong {
+ font-size: 16px;
+ font-weight: 700;
+}
+
+.logo {
+  width:100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main-header {
   width: 100%;
+  margin: auto;
+  background-color: #ddd;
 }
 
 nav {
   width: 100%;
 }
 
-.contact-info h1 {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 21px;
-  font-weight: 700;
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
 }
 
-.contact-info .strong {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 16px;
-  font-weight: 700;
+nav ul li {
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  padding: 0.93em;
+}
+
+nav ul a {
+ text-transform: uppercase;
+ color: #333;
+ font-size: 1.125em;
+}
+
+.contact-info {
+  width: 100%;
+  clear: both;
+  margin: 0;
 }
 
 .contact-info li {
@@ -154,38 +191,16 @@ nav {
   display:block;
 }
 
-.map {
+.map img {
   width: 100%;
+  border: 1px solid #cfcacb;
 }
 
 /*Mission*/
-.mission h1 {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 21px;
-  font-weight: 700;
-}
-
-.mission p{
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-}
 
 /*Team*/
 .team {
   width: 100%;
-}
-
-.team h1 {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 30px;
-  font-weight: 700;
-}
-
-.team h2 {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 21px;
-  font-weight: 700;
 }
 
 .team-member{
@@ -204,9 +219,27 @@ nav {
   font-weight: 400;
 }
 
-.team-img img {
-  width: 35%;
-  float: left;
+.team-img {
+   width: 40%;
+   padding-bottom: 40%;
+   float: left;
+   margin-right: 20px;
+   border: 1px solid #ccc;
+}
+
+#team-img-jack {
+   background: url('../img/team-jack.png') center no-repeat;
+   background-size: cover;
+}
+
+#team-img-lana {
+   background: url('../img/team-lana.png') center no-repeat;
+   background-size: cover;
+}
+
+#team-img-willow {
+   background: url('../img/team-willow.png') center no-repeat;
+   background-size: cover;
 }
 
 footer {
