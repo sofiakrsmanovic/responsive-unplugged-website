@@ -112,24 +112,31 @@ body, html {
 }
 
 a {
-  font-weight: 700;
-  color: #23a4cc;
-  text-decoration: none;
-}
-
-h1 {
-  font-size: 21px;
-  font-weight: 700;
-}
-
-h2 {
-  font-size: 21px;
-  font-weight: 700;
+ font-weight: 700;
+ color: #23a4cc;
+ text-decoration: none;
 }
 
 p {
-  font-size: 14px;
-  font-weight: 400;
+ font-size: 1em;
+ line-height: 1.4;
+}
+
+img {
+ width: 100%;
+}
+
+h1, h2, h3, h4 {
+ font-weight: 700;
+}
+
+h1 {
+ font-size:1.4em;
+ line-height: 1.6;
+}
+
+h2 {
+ font-size: 1em;
 }
 
 figure {
@@ -203,8 +210,16 @@ nav ul a {
   width: 100%;
 }
 
+.team h2 {
+  margin: 0 auto;
+}
+
 .team-member{
   clear:both;
+}
+
+.team-member p {
+  margin: 0 auto;
 }
 
 .team-title {
@@ -217,14 +232,16 @@ nav ul a {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px;
   font-weight: 400;
+  display: none;
 }
 
 .team-img {
    width: 40%;
    padding-bottom: 40%;
+   margin-bottom: 10%;
    float: left;
    margin-right: 20px;
-   border: 1px solid #ccc;
+   border: 2px solid #ccc;
 }
 
 #team-img-jack {
@@ -243,11 +260,16 @@ nav ul a {
 }
 
 footer {
-  clear: both;
-  width: 100%;
+  border-top: 1px solid #ccc;
+ width: 100%;
+ margin: auto 0;
+ padding-top: 20px;
+ margin-top: 20px;
+ clear: both;
+ text-align: center;
 }
 
-footer img {
+.footer-logo img {
   width: 50%;
   text-align: center;
 }
@@ -340,71 +362,237 @@ footer img {
 
 @media screen and (min-width: 768px) {
   /* Tablet styles here! */
-  body {
-      background: #eeeeee;
-      padding: 0 10px;
-    }
-
   body, html {
-    font-family: 'Source Sans Pro', sans-serif;
+   font-family: 'Source Sans Pro', sans-serif;
+   font-size: 16px;
+   color: #222;
+   background-color: #eee;
   }
 
   a {
-    font-weight: 700;
-    color: #23a4cc;
-    text-decoration: none;
+   font-weight: 700;
+   color: #23a4cc;
+   text-decoration: none;
   }
 
+  p {
+   font-size: 1em;
+   line-height: 1.4;
+  }
+
+  img {
+   width: 100%;
+  }
+
+  h1, h2, h3, h4 {
+   font-weight: 700;
+  }
+
+  h1 {
+   font-size:1.4em;
+   line-height: 1.6;
+  }
+
+  h2 {
+   font-size: 1em;
+  }
+
+  figure {
+   margin: 0;
+  }
+
+  /* HEADER ================================ */
   .main-header {
     width: 100%;
+    margin: auto;
+    background-color: #ddd;
+  }
+
+  .figure {
     margin: 0;
-    padding: 0 3%;
   }
 
-  .main-header .header-wrapper {
-    width: 94%;
-    max-width: 960px;
-    margin: 0 auto;
-    clear:both;
-  }
+  /* HEADER ================================ */
+.main-header {
+width: 100%;
+margin: auto;
+background-color: #ddd;
+padding: 0;
+}
 
-  .logo img {
-    width: 30%;
-    float: left;
-  }
+.main-header .header-wrapper {
+width: 94%;
+max-width: 960px;
+margin: 0;
+clear: both;
+}
 
-  nav ul li {
-    width: 60%;
-    float: left;
-  }
+.logo {
+width: 50%;
+float: left;
+margin: 0;
+padding-left: 2%;
+}
 
-  .main-header nav ul {
-    display: block;
-  }
+.logo img {
+max-width: 303px;
+margin: 0;
+}
+
+nav {
+width: 48%;
+float: left;
+margin: 0 auto;
+text-align: center;
+}
+
+nav ul {
+list-style: none;
+padding: 20px 0;
+text-align: center
+}
+
+nav ul li {
+display: inline;
+padding: 0 2%;
+border: none;
+position: relative;
+}
+
+nav ul li a {
+font-size: 1em;
+text-transform: uppercase;
+color: #333;
+}
+
+  /* CONTACT INFO ================================ */
 
 .contact-info {
-  width: 96%;
+  width: 100;
+  padding-top: 40px;
+  margin-right: 0;
 }
 
 .info {
-  float: right;
-  width: 28%;
+  float: left;
+  width: 39%;
+}
+
+.contact-info {
+  width: 100%;
+  clear: both;
+  margin: 0;
+}
+
+.contact-info li {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.contact-info ul li{
+  display:block;
 }
 
 .map {
   float: left;
-  width: 60%;
+  width: 59%;
+  border: 2px solid #000;
+  margin: 0 auto;
+  margin-right: 1%;
+  margin-bottom: 4%;
 }
+
+.map img {
+  width: 100%;
+}
+
+  /* MISSION ================================ */
 
 .mission {
   clear:both;
-  width: 100%;
+  width: 98%;
+  padding-left: 2%;
+  padding-bottom: 3%;
+  padding-top: 2%;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
 }
+
+.mission p {
+  line-height: 25px;
+}
+
+  /* TEAM ================================ */
 
 .team {
   clear: both;
   width: 100%;
+  padding-top: 2%;
 }
+
+.team-member{
+  clear:both;
+}
+
+.team-member p {
+  margin: 0 auto;
+}
+
+.team-title {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.team-description {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  display: none;
+}
+
+.team-img {
+   width: 40%;
+   padding-bottom: 40%;
+   margin-bottom: 10%;
+   float: left;
+   margin-right: 20px;
+   border: 2px solid #ccc;
+}
+
+#team-img-jack {
+   background: url('../img/team-jack.png') center no-repeat;
+   background-size: cover;
+}
+
+#team-img-lana {
+   background: url('../img/team-lana.png') center no-repeat;
+   background-size: cover;
+}
+
+#team-img-willow {
+   background: url('../img/team-willow.png') center no-repeat;
+   background-size: cover;
+}
+
+/* FOOTER ================================ */
+footer {
+border-top: 1px solid #ccc;
+width: 100%;
+clear:both;
+margin: auto;
+text-align: center;
+}
+
+.footer-img {
+  padding-top: 20px;
+  width: 50%;
+  margin: auto;
+}
+}
+
+
 
 @media screen and (min-width: 940px){
   /* Computer styles here! */
