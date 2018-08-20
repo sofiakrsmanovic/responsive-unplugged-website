@@ -527,12 +527,9 @@ color: #333;
 
 .team {
   clear: both;
-  width: 100%;
+  width: 98%;
   padding-top: 2%;
-}
-
-.team-member{
-  clear:both;
+  padding-left: 2%;
 }
 
 .team-member p {
@@ -585,7 +582,7 @@ margin: auto;
 text-align: center;
 }
 
-.footer-img {
+.footer-logo img {
   padding-top: 20px;
   width: 50%;
   margin: auto;
