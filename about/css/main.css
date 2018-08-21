@@ -196,15 +196,28 @@ nav ul a {
 
 .contact-info ul li{
   display:block;
+  vertical-align: top;
 }
 
-.map img {
-  width: 100%;
-  border: 1px solid #cfcacb;
+.map-container {
+   position: relative;
+   padding-bottom: 75%;
+   height: 0;
+   overflow: hidden;
 }
 
+.map-container iframe {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+}
 /*Mission*/
 
+.mission {
+  clear: both;
+}
 /*Team*/
 .team {
   width: 100%;
@@ -471,6 +484,7 @@ color: #333;
   width: 100;
   padding-top: 40px;
   margin-right: 0;
+  clear: both;
 }
 
 .info {
@@ -478,11 +492,6 @@ color: #333;
   width: 39%;
 }
 
-.contact-info {
-  width: 100%;
-  clear: both;
-  margin: 0;
-}
 
 .contact-info li {
   font-family: 'Source Sans Pro', sans-serif;
@@ -490,29 +499,33 @@ color: #333;
   font-weight: 400;
 }
 
+
 .contact-info ul li{
   display:block;
+  vertical-align: top;
 }
 
-.map {
-  float: left;
-  width: 59%;
-  border: 2px solid #000;
-  margin: 0 auto;
-  margin-right: 1%;
-  margin-bottom: 4%;
+.map-container {
+   position: relative;
+   padding-bottom: 75%;
+   height: 0;
+   overflow: hidden;
 }
 
-.map img {
-  width: 100%;
+.map-container iframe {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
 }
-
   /* MISSION ================================ */
 
 .mission {
   clear:both;
-  width: 98%;
+  width: 97%;
   padding-left: 2%;
+  padding-right: 1%;
   padding-bottom: 3%;
   padding-top: 2%;
   border-bottom: 1px solid #ccc;
@@ -558,6 +571,7 @@ color: #333;
    border: 2px solid #ccc;
 }
 
+
 #team-img-jack {
    background: url('../img/team-jack.png') center no-repeat;
    background-size: cover;
@@ -593,46 +607,94 @@ text-align: center;
 
 @media screen and (min-width: 940px){
   /* Computer styles here! */
-main {
-  width: 96%
-  padding 0 3%;
-}
-  body {
-      background: #eeeeee;
-      padding: 0 100px;
-    }
-
   body, html {
-    font-family: 'Source Sans Pro', sans-serif;
+   font-family: 'Source Sans Pro', sans-serif;
+   font-size: 16px;
+   color: #222;
+   background-color: #eee;
   }
 
   a {
-    font-weight: 700;
-    color: #23a4cc;
-    text-decoration: none;
+   font-weight: 700;
+   color: #23a4cc;
+   text-decoration: none;
+  }
+
+  p {
+   font-size: 16px;
+   line-height: 1.4;
+  }
+
+  img {
+   width: 100%;
+  }
+
+  h1, h2, h3, h4 {
+   font-weight: 700;
   }
 
   h1 {
-    font-size: 30px;
-    font-weight: 700;
+   font-size:30px;
+   line-height: 1.6;
   }
 
+  h2 {
+   font-size: 21px;
+  }
+
+  figure {
+   margin: 0;
+  }
+
+  /* HEADER ================================ */
   .main-header {
     width: 100%;
-    margin: auto 0;
-    padding: 0 3%;
+    margin: auto;
+    background-color: #ddd;
   }
 
-  .main-header .logo {
-    width:100%;
+  .figure {
+    margin: 0;
   }
 
-  .main-header nav {
-  width: 100%;
+  .logo {
+    width:50%;
+    margin: 0 auto;
+    float: left;
+    padding-left: 3%;
   }
 
-  .main-header nav ul {
+.logo img {
+  max-width: 350px;
+  margin: 0;
+}
+
+  nav {
+  width: 40%;
+  margin: 0;
+  text-align: center;
+  float: left;
   }
+
+  nav ul {
+  list-style: none;
+  padding: 20px 0;
+  text-align: center
+  }
+
+  nav ul li {
+  display: inline;
+  padding: 0 2%;
+  border: none;
+  position: relative;
+  }
+
+  nav ul li a {
+  font-size: 1em;
+  text-transform: uppercase;
+  color: #333;
+  }
+
 
   .contact-info {
     width: 100%;
@@ -641,39 +703,64 @@ main {
 
   .info {
     float: left;
-    width: 28%;
+    width: 48%;
   }
 
   .map {
-    float: right;
-    width: 60%;
+    float: left;
+    width: 50%;
   }
 
-  .map img {
-    width: 60%;
-  }
 
   .mission {
     clear:both;
-    width: 100%;
+    width: 96%;
+  }
+
+  .team-img {
+     width: 30%;
+     padding-bottom: 30%;
+     margin-bottom: 10%;
+     float: left;
+     margin-right: 20px;
+     border: 2px solid #ccc;
+  }
+
+
+  #team-img-jack {
+     background: url('../img/team-jack.png') center no-repeat;
+     background-size: cover;
+  }
+
+  #team-img-lana {
+     background: url('../img/team-lana.png') center no-repeat;
+     background-size: cover;
+  }
+
+  #team-img-willow {
+     background: url('../img/team-willow.png') center no-repeat;
+     background-size: cover;
   }
 
   .team {
-    clear: both;
-    width: 100%;
+    width: 96%;
   }
 
-  .team h1 {
-    font-size: 30px;
-    font-weight: 700;
-  }
-
-  .team p {
-    font-size: 16px;
-    font-weight: 400;
-  }
+/* FOOTER ================================ */
+footer {
+border-top: 1px solid #ccc;
+width: 100%;
+clear:both;
+margin: auto;
+text-align: center;
 }
 
+.footer-logo img {
+  padding-top: 20px;
+  width: 30%;
+  margin: auto;
+}
+}
 
 
 /* ==========================================================================
