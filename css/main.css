@@ -451,6 +451,7 @@ footer {
   h1 {
    font-size:1.4em;
    line-height: 1.6;
+   margin: 0;
   }
 
   h2 {
@@ -479,9 +480,6 @@ footer {
    background-color: #ff1256;
   }
 
-  .last-item {
-     border-bottom: none !important;
-  }
 
   /* HEADER ================================ */
   .main-header {
@@ -496,7 +494,7 @@ footer {
 
   /* HEADER ================================ */
 .main-header {
-width: 100%;
+width: 96%;
 margin: auto;
 background-color: #ddd;
 padding: 0 2%;
@@ -583,10 +581,11 @@ line-height: 23px;
   /* SIDEBAR ================================ */
 
 .sidebar {
-width: 37%;
+width: 36%;
 float: right;
 clear: both;
 padding-right: 2%;
+padding-left: 1%
   }
 
 
@@ -623,10 +622,14 @@ padding-left: 2%;
 
 .feed-item {
   clear: both;
-  width: 100%;
+  width: 96%;
   border-bottom: 1px solid #ccc;
   padding-bottom: 15px;
   }
+
+.bottom-item {
+  padding-bottom: 20px;
+}
 
 .feed-type {
   text-transform: uppercase;
@@ -634,7 +637,7 @@ padding-left: 2%;
   }
 
   .feed-img {
-   width: 45%;
+   width: 44%;
    float: left;
    margin: 0;
    padding-right: 3%;
