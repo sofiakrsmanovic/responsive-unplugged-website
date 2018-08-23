@@ -739,9 +739,6 @@ font-weight: 700;
    background-color: #ff1256;
   }
 
-  .bottom-item {
-     border-bottom: none !important;
-  }
 
   /* HEADER ================================ */
   .main-header {
@@ -867,7 +864,7 @@ border-bottom: 1px solid #ccc;
   /* FEED ================================ */
 
 .feed {
-width: 100%;
+width: 97%;
 float: none;
 clear: both;
 padding-top: 20px;
@@ -882,11 +879,7 @@ margin-left: 3%;
     padding-bottom: 20px;
 }
 
-.bottom-item {
-  clear: both;
-  width: 97%;
-  padding-bottom: 20px;
-}
+
 
 .feed-item p, .bottom-item p {
   margin-top: 0;
@@ -895,15 +888,15 @@ margin-left: 3%;
   width: 98%;
 }
 
-.bottom-item h2, .feed-item h2 {
-  margin: 0;
-  font-size: 21px;
-}
-
 .feed-img {
   width: 20%;
   float:left;
   padding-right: 2%;
+}
+
+.bottom-item {
+  border-bottom: none;
+  padding-bottom: 20px;
 }
 
   /* FOOTER ================================ */
