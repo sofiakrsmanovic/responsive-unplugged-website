@@ -650,7 +650,7 @@ text-align: center;
 
   p {
    font-size: 16px;
-   line-height: 1.4;
+   line-height: 1.8em;
   }
 
   img {
@@ -824,7 +824,8 @@ text-align: center;
   }
 
   .team-description {
-    font-size: 16px;
+    font-size: 1em;
+    line-height: 1.8em;
   }
 
 .team-title {
