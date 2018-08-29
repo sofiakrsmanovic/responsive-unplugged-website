@@ -185,6 +185,10 @@ nav ul a {
  font-size: 1.125em;
 }
 
+i {
+  padding-right: 5px;
+}
+
 /*FAQ*/
 .faqs-item {
     border-bottom: 1px solid #ccc;
@@ -403,6 +407,9 @@ footer {
    color: #333;
    }
 
+   i {
+     padding-right: 5px;
+   }
 
 .faqs-item {
     padding-left: 2%;
@@ -526,6 +533,10 @@ footer {
    font-size: 1em;
    text-transform: uppercase;
    color: #333;
+   }
+
+   i {
+     padding-right: 5px;
    }
 
 .faqs-item, .faqs-last-item {
