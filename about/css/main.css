@@ -184,6 +184,10 @@ nav ul a {
  font-size: 1.125em;
 }
 
+i {
+  padding-right: 5px;
+}
+
 .contact-info {
   width: 100%;
   margin: 0;
@@ -424,6 +428,10 @@ footer {
 
   figure {
    margin: 0;
+  }
+
+  i {
+    padding-right: 5px;
   }
 
   /* HEADER ================================ */
@@ -725,6 +733,9 @@ text-align: center;
   color: #333;
   }
 
+  i {
+    padding-right: 5px;
+  }
 
   .contact-info {
     width: 99%;
