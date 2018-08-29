@@ -207,6 +207,10 @@ nav ul a {
  font-size: 1.125em;
 }
 
+i {
+  padding-right: 5px;
+}
+
 /* MAIN CONTENT ================================ */
 main {
  width: 96%;
@@ -548,6 +552,10 @@ text-transform: uppercase;
 color: #333;
 }
 
+i {
+  padding-right: 5px;
+}
+
   /* MAIN CONTENT ================================ */
 
 .top-story {
@@ -793,6 +801,10 @@ font-weight: 700;
   font-size: 1em;
   text-transform: uppercase;
   color: #333;
+  }
+
+  i {
+    padding-right: 5px;
   }
 
   /* MAIN CONTENT ================================ */
