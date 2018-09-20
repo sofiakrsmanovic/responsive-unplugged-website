@@ -107,7 +107,7 @@ body, html {
  font-family: 'Source Sans Pro', sans-serif;
  font-size: 16px;
  color: #222;
- background-color: #eee;
+ background-color: #fff;
 }
 
 a {
@@ -280,11 +280,10 @@ main {
   display: none;
 }
 
-.feed h2 {
+.feed-item h2 {
   font-size: 1em;
   font-weight: 700;
   margin: 0 auto;
-  padding-top: 20px;
 
 }
 
@@ -433,7 +432,7 @@ footer {
    font-family: 'Source Sans Pro', sans-serif;
    font-size: 16px;
    color: #222;
-   background-color: #eee;
+   background-color: #fff;
   }
 
   a {
@@ -694,7 +693,7 @@ font-weight: 700;
    font-family: 'Source Sans Pro', sans-serif;
    font-size: 16px;
    color: #222;
-   background-color: #eee;
+   background-color: #fff;
   }
 
   a {
