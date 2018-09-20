@@ -108,7 +108,7 @@ body, html {
  font-family: 'Source Sans Pro', sans-serif;
  font-size: 16px;
  color: #222;
- background-color: #eee;
+ background-color: #fff;
 }
 
 a {
@@ -399,7 +399,7 @@ footer {
    font-family: 'Source Sans Pro', sans-serif;
    font-size: 16px;
    color: #222;
-   background-color: #eee;
+   background-color: #fff;
   }
 
   a {
@@ -651,7 +651,7 @@ text-align: center;
    font-family: 'Source Sans Pro', sans-serif;
    font-size: 16px;
    color: #222;
-   background-color: #eee;
+   background-color: #fff;
   }
 
   a {
